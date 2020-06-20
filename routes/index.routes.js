@@ -19,6 +19,9 @@ router.get('/', function(req, res){
     console.log(info.streams[0].bit_rate);
   });
 
+
+  
+
   const readable = fs.createReadStream('myAudio.mp3');
   const throttle = new Throttle(bitRate / 8);
   writables.push(responseSink);
