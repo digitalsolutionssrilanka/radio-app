@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<table class="ui selectable inverted table">
+    <thead>
+        <tr>
+            <th>Song Name</th>
+            <th>Song Link</th>
+            <th class="right aligned">Playlists</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% songs.forEach(function(song){ %>
+        <tr>
+            <td><%= song.name %></td>
+            <td><a href=<%= song.link %> add target="_blank">Youtube link</a></td>
+            <td class="right aligned"><%=  %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<%- include('partials/footer') %>

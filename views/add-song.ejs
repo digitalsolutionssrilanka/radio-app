@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+    <div class="ui two column centered grid">
+        <form class="ui form" action="/songs/new" method="POST">
+            <div class="four column centered row">
+                <label class="">Song Name</label>
+                <input type="text" name=song[name] required>
+            </div>
+            <div class="four column centered row">
+                <label class="">Youtube link</label>
+                <input type="text" name=song[link] required>
+            </div>
+            <div class="four column centered row">
+                <button class="ui button" type="submit">Upload</button>
+            </div>
+        </form>
+    </div>
+
+<%- include('partials/footer') %>

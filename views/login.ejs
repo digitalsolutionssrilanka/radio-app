@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+    <div class="ui two column centered grid">
+        <form class="ui form" action="/login" method="POST">
+            <div class="four column centered row">
+                <label class="">Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="four column centered row">
+                <label>Password</label>
+                <input type="password" name="password" required>
+            </div><br>
+            <div class="four column centered row">
+                <button class="ui button" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+
+<%- include('partials/footer') %>
